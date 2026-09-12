@@ -597,7 +597,7 @@ if (contactForm) {
     entries.forEach(function(entry){
       if (entry.isIntersecting) {
         entry.target.classList.add("revealed");
-        setTimeout(function(){ entry.target.style.transitionDelay = ""; }, 1000);
+        setTimeout(function(){ entry.target.style.transitionDelay = ""; entry.target.removeAttribute("data-reveal"); }, 1000);
         io.unobserve(entry.target);
       }
     });
