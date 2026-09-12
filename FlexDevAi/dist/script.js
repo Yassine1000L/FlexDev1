@@ -294,7 +294,7 @@ const translations= {
     "nav__projects": "Projecten",
     "nav__contact": "Laten we over je project praten ",
     "hero__eyebrow": "ONTWIKKELAAR & PROBLEEMOPLOSSER",
-    "hero__title": "Ik bouw.<br><span>Ik repareer.</span>",
+    "hero__title": "Ik bouw.<br><span>Ik verbeter.</span>",
     "hero__intro": "Uw idee verdient een website die werkt.<br>Maatwerk, optimalisatie en het oplossen van bugs: ik regel de techniek.",
     "hero__cta": "Vraag een gratis offerte ",
     "hero__see_work": "Bekijk mijn werk <span>↓</span>",
@@ -426,7 +426,7 @@ const translations= {
     "contact__detail3": "Vrijblijvend",
     "footer__tagline": "Webontwikkeling. Concrete oplossingen.",
     "footer__top": "Terug naar boven ↑",
-    "title": "Flex Dev — Ik bouw. Ik repareer.",
+    "title": "Flex Dev — Ik bouw. Ik verbeter.",
     "meta_description": "Flex Dev: maatwerk websites, bugfixes, optimalisatie en onderhoud. Laten we over je project praten."
   }
 };
