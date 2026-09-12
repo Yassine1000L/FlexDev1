@@ -9,3 +9,4 @@
 .lang-switch select option:checked{background:#111310;color:var(--lime)}
 .lang-switch select:focus-visible{outline:3px solid var(--lime);outline-offset:4px}
 @media(max-width:650px){.lang-switch select{padding:5px 8px;font-size:13px}}
+.tech-strip .wrap>span{text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:2px;text-underline-offset:5px}
