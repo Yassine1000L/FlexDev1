@@ -406,7 +406,7 @@ function applyLang(code) {
   }
 })();
 const WHATSAPP_NUMBER = "32483563735";
-const CONTACT_EMAIL = "FlexDevInfo@gmail.com";
+const CONTACT_EMAIL = "flexdev.web@gmail.com";
 const contactForm = document.getElementById("contactForm");
 if (contactForm) {
   const steps = [...contactForm.querySelectorAll(".form-step")];
