@@ -189,7 +189,7 @@ const translations= {
     "nav__contact": "Laten we over je project praten <span>↗</span>",
     "hero__eyebrow": "ONTWIKKELAAR & PROBLEEMOPLOSSER",
     "hero__title": "Ik bouw.<br><span>Ik repareer.</span>",
-    "hero__intro": "Je idee verdient een website die werkt.<br>Maatwerk, optimalisatie en het oplossen van bugs: ik regel de techniek.",
+    "hero__intro": "Uw idee verdient een website die werkt.<br>Maatwerk, optimalisatie en het oplossen van bugs: ik regel de techniek.",
     "hero__cta": "Vraag een gratis offerte <span>↗</span>",
     "hero__see_work": "Bekijk mijn werk <span>↓</span>",
     "hero__note": "Eén aanspreekpunt. Concrete oplossingen.",
