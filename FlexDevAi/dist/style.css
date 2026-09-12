@@ -23,7 +23,9 @@
 .contact-form .form-input{display:block;width:100%;margin-top:14px;background:#151b0e;color:var(--white);border:1px solid #344123;border-radius:8px;padding:12px 14px;font:inherit;font-size:15px;box-sizing:border-box}
 .contact-form .form-input::placeholder{color:#a3a79e}
 .contact-form .form-input:focus{outline:2px solid var(--lime);border-color:var(--lime)}
-.contact-form .form-next{margin-top:18px}
+.contact-form .form-next{display:block;width:100%;margin-top:22px;padding:14px 18px;background:#f5f6f0;color:#151b0e;border:1px solid #f5f6f0;border-radius:8px;font-weight:700;font-size:15px;cursor:pointer;transition:background .2s,transform .2s}
+.contact-form .form-next:hover{background:#dfe4d3}
+.contact-form .form-next:active{transform:translateY(1px)}
 .contact-form .form-summary{background:#151b0e;color:var(--white);border-radius:8px;padding:16px;margin-top:18px;white-space:pre-line;font-size:14px;line-height:1.6}
 .contact-form .form-actions{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap;align-items:center}
 .contact-form .form-wa{background:#1fae54;color:#0a2a12}
