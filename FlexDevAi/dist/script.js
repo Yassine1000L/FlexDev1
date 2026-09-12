@@ -652,6 +652,7 @@ if (contactForm) {
     if ((atStart && e.deltaY < 0) || (atEnd && e.deltaY > 0)) { return; }
     if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) { return; }
     e.preventDefault();
-    track.scrollLeft += e.deltaY;
+    var amount = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY;
+    track.scrollLeft += amount;
   }, { passive: false });
 })();
