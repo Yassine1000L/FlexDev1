@@ -604,6 +604,7 @@ if (contactForm) {
   }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
   function set(el, delay){
     if (!el) { return; }
+    el.setAttribute("data-reveal", "");
     if (delay) { el.style.transitionDelay = delay + "ms"; }
     io.observe(el);
   }
