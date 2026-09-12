@@ -32,3 +32,18 @@
 .contact-form .form-mail:hover{background:#344123}
 .contact-form .form-back{background:none;border:none;color:#4e5b39;text-decoration:underline;cursor:pointer;font:inherit;font-size:14px;margin-top:18px;display:none;padding:0}
 .contact-form .form-back:focus-visible{outline:3px solid #151b0e;outline-offset:4px}
+.js [data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
+.js [data-reveal].revealed{opacity:1;transform:none}
+.service-grid article{transition:border-color .2s,transform .35s ease}
+.service-grid article:hover{transform:translateY(-6px)}
+.service-grid article:hover .card-top{color:var(--lime)}
+.steps article{transition:transform .35s ease}
+.steps article:hover{transform:translateY(-6px)}
+.benefits article{transition:transform .3s ease}
+.benefits article:hover{transform:translateX(7px)}
+.button:hover{transform:translateY(-2px)}
+.text-link{transition:color .2s,transform .3s ease;display:inline-block}
+.text-link:hover{transform:translateX(4px)}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.hero-visual img{animation:floatY 6s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.js [data-reveal]{opacity:1!important;transform:none!important;transition:none!important}.hero-visual img{animation:none}.service-grid article:hover,.steps article:hover,.benefits article:hover,.button:hover,.text-link:hover{transform:none}}

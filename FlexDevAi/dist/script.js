@@ -1,3 +1,4 @@
+document.documentElement.classList.add("js");
 const translations= {
   fr: {
     "nav__services": "Services",
@@ -590,3 +591,31 @@ if (contactForm) {
   }
   goStep(1);
 }
+(function initReveal(){
+  if (!("IntersectionObserver" in window)) { return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) {
+        entry.target.classList.add("revealed");
+        setTimeout(function(){ entry.target.style.transitionDelay = ""; }, 1000);
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  function set(el, delay){
+    if (!el) { return; }
+    if (delay) { el.style.transitionDelay = delay + "ms"; }
+    io.observe(el);
+  }
+  document.querySelectorAll(".hero-text > *").forEach(function(el, i){ set(el, i * 100); });
+  set(document.querySelector(".hero-visual"), 150);
+  set(document.querySelector(".tech-strip"), 0);
+  document.querySelectorAll(".about > div").forEach(function(el, i){ set(el, i * 120); });
+  document.querySelectorAll(".section-head").forEach(function(el){ set(el, 0); });
+  document.querySelectorAll(".service-grid article").forEach(function(el, i){ set(el, (i % 3) * 90); });
+  document.querySelectorAll(".why-layout > div:first-child").forEach(function(el){ set(el, 0); });
+  document.querySelectorAll(".benefits article").forEach(function(el, i){ set(el, i * 70); });
+  document.querySelectorAll(".steps article").forEach(function(el, i){ set(el, i * 90); });
+  document.querySelectorAll(".contact > div:first-child").forEach(function(el){ set(el, 0); });
+  set(document.querySelector(".contact-details"), 150);
+})();
