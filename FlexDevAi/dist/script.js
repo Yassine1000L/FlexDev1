@@ -77,7 +77,7 @@ const translations= {
     "proj__03_title": "Projet 03",
     "proj__04_title": "Projet 04",
     "proj__desc": "Plus d’informations sur ce projet à venir.",
-    "contact__eyebrow": "06 / PARLONS-EN",
+    "contact__eyebrow": "05 / PARLONS-EN",
     "contact__title": "Votre prochain projet<br>commence <em>ici.</em>",
     "contact__p": "Un nouveau site, un bug tenace ou une idée à concrétiser ?<br>Racontez-moi ce dont vous avez besoin.",
     "q_need": "De quoi avez-vous besoin ?",
