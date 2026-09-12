@@ -141,43 +141,67 @@
       <h2 data-i18n="contact__title">Votre prochain projet<br>commence <em>ici.</em></h2>
       <p data-i18n="contact__p">Un nouveau site, un bug tenace ou une idée à concrétiser ?<br>Racontez-moi ce dont vous avez besoin.</p>
       <div class="contact-form" id="contactForm">
-        <p class="form-stepcount" id="formStepcount">1 / 5</p>
+        <p class="form-stepcount" id="formStepcount">1 / 6</p>
         <div class="form-step active" data-step="1">
-          <p class="form-question" data-i18n="q_need">1 / De quoi avez-vous besoin ?</p>
+          <p class="form-question" data-i18n="q_need">De quoi avez-vous besoin ?</p>
           <div class="form-options">
-            <button type="button" class="form-option" data-key="need_site" data-i18n="need_site">Un nouveau site</button>
+            <button type="button" class="form-option" data-key="need_new" data-i18n="need_new">Un nouveau site web</button>
+            <button type="button" class="form-option" data-key="need_redesign" data-i18n="need_redesign">Refonte d’un site existant</button>
             <button type="button" class="form-option" data-key="need_bug" data-i18n="need_bug">Corriger un bug</button>
             <button type="button" class="form-option" data-key="need_perf" data-i18n="need_perf">Optimisation & performances</button>
             <button type="button" class="form-option" data-key="need_maint" data-i18n="need_maint">Maintenance</button>
-            <button type="button" class="form-option" data-key="need_other" data-i18n="need_other">Autre chose</button>
+            <button type="button" class="form-option" data-key="need_other" data-i18n="need_other">Autre</button>
           </div>
         </div>
         <div class="form-step" data-step="2">
-          <p class="form-question" data-i18n="q_budget">2 / Quel est votre budget ?</p>
-          <div class="form-options">
-            <button type="button" class="form-option" data-key="budget_low"><span data-i18n="budget_low">&lt; 500 €</span></button>
-            <button type="button" class="form-option" data-key="budget_mid" data-i18n="budget_mid">500 € – 1 500 €</button>
-            <button type="button" class="form-option" data-key="budget_high" data-i18n="budget_high">1 500 € – 5 000 €</button>
-            <button type="button" class="form-option" data-key="budget_max"><span data-i18n="budget_max">&gt; 5 000 €</span></button>
-            <button type="button" class="form-option" data-key="budget_unknown" data-i18n="budget_unknown">Je ne sais pas encore</button>
-          </div>
+          <p class="form-question" data-i18n="q_project">Parlez-moi de votre projet</p>
+          <p class="form-hint" data-i18n="project_hint">Décrivez brièvement votre projet, les fonctionnalités souhaitées ou le problème que vous rencontrez.</p>
+          <textarea class="form-input" id="formMsg" rows="4" data-i18n-ph="project_ph" placeholder="Décrivez votre projet…"></textarea>
+          <input class="form-input" id="formUrl" type="url" data-i18n-ph="url_ph" placeholder="Vous avez déjà un site ? Ajoutez son lien (facultatif)">
+          <button type="button" class="button dark form-next" data-i18n="next">Continuer</button>
         </div>
         <div class="form-step" data-step="3">
-          <p class="form-question" data-i18n="q_timing">3 / Quel est votre calendrier ?</p>
+          <p class="form-question" data-i18n="q_features">Quelles fonctionnalités souhaitez-vous ?</p>
+          <p class="form-hint" data-i18n="features_hint">Plusieurs réponses possibles.</p>
           <div class="form-options">
-            <button type="button" class="form-option" data-key="timing_soon" data-i18n="timing_soon">Le plus tôt possible</button>
-            <button type="button" class="form-option" data-key="timing_months" data-i18n="timing_months">Dans 1 à 3 mois</button>
-            <button type="button" class="form-option" data-key="timing_flex" data-i18n="timing_flex">C’est flexible</button>
+            <button type="button" class="form-option" data-key="feat_contact" data-i18n="feat_contact">Formulaire de contact</button>
+            <button type="button" class="form-option" data-key="feat_booking" data-i18n="feat_booking">Prise de rendez-vous / réservation</button>
+            <button type="button" class="form-option" data-key="feat_payment" data-i18n="feat_payment">Paiement en ligne</button>
+            <button type="button" class="form-option" data-key="feat_shop" data-i18n="feat_shop">Boutique en ligne</button>
+            <button type="button" class="form-option" data-key="feat_account" data-i18n="feat_account">Espace client / connexion</button>
+            <button type="button" class="form-option" data-key="feat_lang" data-i18n="feat_lang">Plusieurs langues</button>
+            <button type="button" class="form-option" data-key="feat_anim" data-i18n="feat_anim">Animations / design personnalisé</button>
+            <button type="button" class="form-option" data-key="feat_unknown" data-i18n="feat_unknown">Je ne sais pas encore</button>
+            <button type="button" class="form-option" data-key="feat_other" data-i18n="feat_other">Autre</button>
           </div>
+          <button type="button" class="button dark form-next" data-i18n="next">Continuer</button>
         </div>
         <div class="form-step" data-step="4">
-          <p class="form-question" data-i18n="q_details">4 / Votre projet en quelques mots</p>
-          <input class="form-input" id="formName" type="text" data-i18n-ph="name_ph" placeholder="Votre nom">
-          <textarea class="form-input" id="formMsg" rows="4" data-i18n-ph="msg_ph" placeholder="Décrivez votre projet…"></textarea>
-          <button type="button" class="button dark form-next" id="formNext" data-i18n="next">Continuer</button>
+          <p class="form-question" data-i18n="q_launch">Quand souhaitez-vous lancer votre projet ?</p>
+          <div class="form-options">
+            <button type="button" class="form-option" data-key="launch_soon" data-i18n="launch_soon">Dès que possible</button>
+            <button type="button" class="form-option" data-key="launch_month" data-i18n="launch_month">Dans moins d’un mois</button>
+            <button type="button" class="form-option" data-key="launch_3m" data-i18n="launch_3m">Dans 1 à 3 mois</button>
+            <button type="button" class="form-option" data-key="launch_3plus" data-i18n="launch_3plus">Dans plus de 3 mois</button>
+            <button type="button" class="form-option" data-key="launch_open" data-i18n="launch_open">Je n’ai pas de date précise</button>
+          </div>
         </div>
         <div class="form-step" data-step="5">
-          <p class="form-question" data-i18n="q_contact">5 / Comment souhaitez-vous être contacté ?</p>
+          <p class="form-question" data-i18n="q_contact">Comment puis-je vous contacter ?</p>
+          <input class="form-input" id="formName" type="text" data-i18n-ph="name_ph" placeholder="Nom / entreprise">
+          <input class="form-input" id="formEmail" type="email" data-i18n-ph="email_ph" placeholder="Adresse e-mail">
+          <input class="form-input" id="formPhone" type="tel" data-i18n-ph="phone_ph" placeholder="Téléphone (facultatif)">
+          <p class="form-question" data-i18n="q_budget">Avez-vous déjà défini un budget pour ce projet ?</p>
+          <div class="form-options">
+            <button type="button" class="form-option" data-key="budget_yes" data-i18n="budget_yes">Oui</button>
+            <button type="button" class="form-option" data-key="budget_no" data-i18n="budget_no">Pas encore</button>
+            <button type="button" class="form-option" data-key="budget_estimate" data-i18n="budget_estimate">J’aimerais recevoir une estimation</button>
+          </div>
+          <input class="form-input" id="formBudget" type="text" style="display:none" data-i18n-ph="budget_ph" placeholder="Budget approximatif (ex. 1 500 €)">
+          <button type="button" class="button dark form-next" data-i18n="next">Continuer</button>
+        </div>
+        <div class="form-step" data-step="6">
+          <p class="form-question" data-i18n="q_channel">Comment souhaitez-vous être contacté ?</p>
           <div class="form-summary" id="formSummary"></div>
           <div class="form-actions">
             <a class="button form-wa" id="waLink" href="#" target="_blank" rel="noopener noreferrer" data-i18n="btn_wa">Discuter sur WhatsApp ↗</a>

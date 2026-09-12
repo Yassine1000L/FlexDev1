@@ -81,34 +81,57 @@ const translations= {
     "contact__title": "Votre prochain projet<br>commence <em>ici.</em>",
     "contact__p": "Un nouveau site, un bug tenace ou une idée à concrétiser ?<br>Racontez-moi ce dont vous avez besoin.",
     "q_need": "De quoi avez-vous besoin ?",
-    "q_budget": "Quel est votre budget ?",
-    "q_timing": "Quand souhaitez-vous démarrer ?",
-    "q_details": "Votre projet en quelques mots",
-    "q_contact": "Comment souhaitez-vous être contacté ?",
-    "need_site": "Un nouveau site",
+    "need_new": "Un nouveau site web",
+    "need_redesign": "Refonte d’un site existant",
     "need_bug": "Corriger un bug",
     "need_perf": "Optimisation & performances",
     "need_maint": "Maintenance",
-    "need_other": "Autre chose",
-    "budget_low": "&lt; 500 €",
-    "budget_mid": "500 € – 1 500 €",
-    "budget_high": "1 500 € – 5 000 €",
-    "budget_max": "&gt; 5 000 €",
-    "budget_unknown": "Je ne sais pas encore",
-    "timing_soon": "Le plus tôt possible",
-    "timing_months": "Dans 1 à 3 mois",
-    "timing_flex": "C’est flexible",
-    "name_ph": "Votre nom",
-    "msg_ph": "Décrivez votre projet…",
+    "need_other": "Autre",
+    "q_project": "Parlez-moi de votre projet",
+    "project_hint": "Décrivez brièvement votre projet, les fonctionnalités souhaitées ou le problème que vous rencontrez.",
+    "project_ph": "Décrivez votre projet…",
+    "url_ph": "Vous avez déjà un site ? Ajoutez son lien (facultatif)",
+    "q_features": "Quelles fonctionnalités souhaitez-vous ?",
+    "features_hint": "Plusieurs réponses possibles.",
+    "feat_contact": "Formulaire de contact",
+    "feat_booking": "Prise de rendez-vous / réservation",
+    "feat_payment": "Paiement en ligne",
+    "feat_shop": "Boutique en ligne",
+    "feat_account": "Espace client / connexion",
+    "feat_lang": "Plusieurs langues",
+    "feat_anim": "Animations / design personnalisé",
+    "feat_unknown": "Je ne sais pas encore",
+    "feat_other": "Autre",
+    "q_launch": "Quand souhaitez-vous lancer votre projet ?",
+    "launch_soon": "Dès que possible",
+    "launch_month": "Dans moins d’un mois",
+    "launch_3m": "Dans 1 à 3 mois",
+    "launch_3plus": "Dans plus de 3 mois",
+    "launch_open": "Je n’ai pas de date précise",
+    "q_contact": "Comment puis-je vous contacter ?",
+    "name_ph": "Nom / entreprise",
+    "email_ph": "Adresse e-mail",
+    "phone_ph": "Téléphone (facultatif)",
+    "q_budget": "Avez-vous déjà défini un budget pour ce projet ?",
+    "budget_yes": "Oui",
+    "budget_no": "Pas encore",
+    "budget_estimate": "J’aimerais recevoir une estimation",
+    "budget_ph": "Budget approximatif (ex. 1 500 €)",
     "next": "Continuer",
     "back": "Retour",
     "btn_wa": "Discuter sur WhatsApp ↗",
     "btn_mail": "Envoyer un e-mail ↗",
+    "q_channel": "Comment souhaitez-vous être contacté ?",
     "greeting": "Bonjour Flex Dev !",
     "summary_need": "Besoin : ",
-    "summary_budget": "Budget : ",
+    "summary_desc": "Projet : ",
+    "summary_url": "Site actuel : ",
+    "summary_features": "Fonctionnalités : ",
     "summary_timing": "Délai : ",
+    "summary_budget": "Budget : ",
     "summary_name": "Nom : ",
+    "summary_email": "E-mail : ",
+    "summary_phone": "Téléphone : ",
     "email_subject": "Projet Flex Dev — contact",
     "contact__detail1": "Réponse sous 24 h",
     "contact__detail2": "Devis gratuit",
@@ -200,34 +223,57 @@ const translations= {
     "contact__title": "Your next project<br>starts <em>here.</em>",
     "contact__p": "A new website, a stubborn bug or an idea to bring to life?<br>Tell me what you need.",
     "q_need": "What do you need?",
-    "q_budget": "What is your budget?",
-    "q_timing": "When would you like to start?",
-    "q_details": "Your project in a few words",
-    "q_contact": "How would you like to be contacted?",
-    "need_site": "A new website",
+    "need_new": "A new website",
+    "need_redesign": "Redesign of an existing site",
     "need_bug": "Fix a bug",
     "need_perf": "Optimization & performance",
     "need_maint": "Maintenance",
-    "need_other": "Something else",
-    "budget_low": "&lt; 500 €",
-    "budget_mid": "500 € – 1 500 €",
-    "budget_high": "1 500 € – 5 000 €",
-    "budget_max": "&gt; 5 000 €",
-    "budget_unknown": "Not sure yet",
-    "timing_soon": "As soon as possible",
-    "timing_months": "In 1 to 3 months",
-    "timing_flex": "It’s flexible",
-    "name_ph": "Your name",
-    "msg_ph": "Describe your project…",
+    "need_other": "Other",
+    "q_project": "Tell me about your project",
+    "project_hint": "Briefly describe your project, the features you want or the problem you are facing.",
+    "project_ph": "Describe your project…",
+    "url_ph": "Do you already have a site? Add its link (optional)",
+    "q_features": "Which features would you like?",
+    "features_hint": "Several answers are possible.",
+    "feat_contact": "Contact form",
+    "feat_booking": "Appointment / booking",
+    "feat_payment": "Online payment",
+    "feat_shop": "Online store",
+    "feat_account": "Client area / login",
+    "feat_lang": "Multiple languages",
+    "feat_anim": "Animations / custom design",
+    "feat_unknown": "Not sure yet",
+    "feat_other": "Other",
+    "q_launch": "When would you like to launch your project?",
+    "launch_soon": "As soon as possible",
+    "launch_month": "Within a month",
+    "launch_3m": "In 1 to 3 months",
+    "launch_3plus": "In more than 3 months",
+    "launch_open": "No specific date",
+    "q_contact": "How can I reach you?",
+    "name_ph": "Name / company",
+    "email_ph": "Email address",
+    "phone_ph": "Phone (optional)",
+    "q_budget": "Have you already set a budget for this project?",
+    "budget_yes": "Yes",
+    "budget_no": "Not yet",
+    "budget_estimate": "I would like an estimate",
+    "budget_ph": "Approximate budget (e.g. €1,500)",
     "next": "Continue",
     "back": "Back",
     "btn_wa": "Chat on WhatsApp ↗",
     "btn_mail": "Send an email ↗",
+    "q_channel": "How would you like to be contacted?",
     "greeting": "Hello Flex Dev!",
     "summary_need": "Need: ",
-    "summary_budget": "Budget: ",
+    "summary_desc": "Project: ",
+    "summary_url": "Current site: ",
+    "summary_features": "Features: ",
     "summary_timing": "Timeline: ",
+    "summary_budget": "Budget: ",
     "summary_name": "Name: ",
+    "summary_email": "Email: ",
+    "summary_phone": "Phone: ",
     "email_subject": "Flex Dev project — contact",
     "contact__detail1": "Reply within 24 h",
     "contact__detail2": "Free quote",
@@ -319,34 +365,57 @@ const translations= {
     "contact__title": "Je volgende project<br>begint <em>hier.</em>",
     "contact__p": "Een nieuwe website, een hardnekkige bug of een idee dat je wilt realiseren?<br>Vertel me wat je nodig hebt.",
     "q_need": "Wat heb je nodig?",
-    "q_budget": "Wat is je budget?",
-    "q_timing": "Wanneer wil je starten?",
-    "q_details": "Je project in een paar woorden",
-    "q_contact": "Hoe wil je gecontacteerd worden?",
-    "need_site": "Een nieuwe website",
+    "need_new": "Een nieuwe website",
+    "need_redesign": "Herontwerp van een bestaande site",
     "need_bug": "Een bug oplossen",
     "need_perf": "Optimalisatie & prestaties",
     "need_maint": "Onderhoud",
-    "need_other": "Iets anders",
-    "budget_low": "&lt; 500 €",
-    "budget_mid": "500 € – 1 500 €",
-    "budget_high": "1 500 € – 5 000 €",
-    "budget_max": "&gt; 5 000 €",
-    "budget_unknown": "Weet ik nog niet",
-    "timing_soon": "Zo snel mogelijk",
-    "timing_months": "Binnen 1 tot 3 maanden",
-    "timing_flex": "Het is flexibel",
-    "name_ph": "Jouw naam",
-    "msg_ph": "Beschrijf je project…",
+    "need_other": "Anders",
+    "q_project": "Vertel me over je project",
+    "project_hint": "Beschrijf kort je project, de gewenste functionaliteiten of het probleem dat je tegenkomt.",
+    "project_ph": "Beschrijf je project…",
+    "url_ph": "Heb je al een website? Voeg de link toe (optioneel)",
+    "q_features": "Welke functionaliteiten wil je?",
+    "features_hint": "Meerdere antwoorden mogelijk.",
+    "feat_contact": "Contactformulier",
+    "feat_booking": "Afspraak / reservering",
+    "feat_payment": "Online betaling",
+    "feat_shop": "Webwinkel",
+    "feat_account": "Klantportaal / inloggen",
+    "feat_lang": "Meerdere talen",
+    "feat_anim": "Animaties / custom design",
+    "feat_unknown": "Weet ik nog niet",
+    "feat_other": "Anders",
+    "q_launch": "Wanneer wil je je project lanceren?",
+    "launch_soon": "Zo snel mogelijk",
+    "launch_month": "Binnen een maand",
+    "launch_3m": "Binnen 1 tot 3 maanden",
+    "launch_3plus": "Over meer dan 3 maanden",
+    "launch_open": "Geen vaste datum",
+    "q_contact": "Hoe kan ik je bereiken?",
+    "name_ph": "Naam / bedrijf",
+    "email_ph": "E-mailadres",
+    "phone_ph": "Telefoon (optioneel)",
+    "q_budget": "Heb je al een budget vastgesteld voor dit project?",
+    "budget_yes": "Ja",
+    "budget_no": "Nog niet",
+    "budget_estimate": "Ik wil graag een schatting",
+    "budget_ph": "Geschat budget (bijv. € 1.500)",
     "next": "Verder",
     "back": "Terug",
     "btn_wa": "Chatten via WhatsApp ↗",
     "btn_mail": "Stuur een e-mail ↗",
+    "q_channel": "Hoe wil je gecontacteerd worden?",
     "greeting": "Hallo Flex Dev!",
     "summary_need": "Behoefte: ",
-    "summary_budget": "Budget: ",
+    "summary_desc": "Project: ",
+    "summary_url": "Bestaande site: ",
+    "summary_features": "Functionaliteiten: ",
     "summary_timing": "Planning: ",
+    "summary_budget": "Budget: ",
     "summary_name": "Naam: ",
+    "summary_email": "E-mail: ",
+    "summary_phone": "Telefoon: ",
     "email_subject": "Flex Dev project — contact",
     "contact__detail1": "Reactie binnen 24 uur",
     "contact__detail2": "Gratis offerte",
@@ -412,13 +481,18 @@ if (contactForm) {
   const steps = [...contactForm.querySelectorAll(".form-step")];
   const stepcount = document.getElementById("formStepcount");
   const backBtn = document.getElementById("formBack");
-  const nextBtn = document.getElementById("formNext");
-  const nameInput = document.getElementById("formName");
-  const msgInput = document.getElementById("formMsg");
   const summary = document.getElementById("formSummary");
   const waLink = document.getElementById("waLink");
   const mailLink = document.getElementById("mailLink");
-  const answers = {};
+  const nameInput = document.getElementById("formName");
+  const emailInput = document.getElementById("formEmail");
+  const phoneInput = document.getElementById("formPhone");
+  const msgInput = document.getElementById("formMsg");
+  const urlInput = document.getElementById("formUrl");
+  const budgetInput = document.getElementById("formBudget");
+  const featureStep = contactForm.querySelector('.form-step[data-step="3"]');
+  const budgetStep = contactForm.querySelector('.form-step[data-step="5"]');
+  const answers = { need: "", project: "", url: "", features: [], launch: "", budget: "", budgetAmount: "", name: "", email: "", phone: "" };
   let currentStep = 1;
   function goStep(n) {
     if (n < 1) { n = 1; }
@@ -428,34 +502,76 @@ if (contactForm) {
     if (stepcount) { stepcount.textContent = n + " / " + steps.length; }
     if (backBtn) { backBtn.style.display = n > 1 ? "inline-block" : "none"; }
   }
-  contactForm.querySelectorAll(".form-option").forEach(btn => {
+  ["1", "4"].forEach(num => {
+    const step = contactForm.querySelector('.form-step[data-step="' + num + '"]');
+    if (step) {
+      step.querySelectorAll(".form-option").forEach(btn => {
+        btn.addEventListener("click", () => {
+          step.querySelectorAll(".form-option").forEach(b => b.classList.remove("selected"));
+          btn.classList.add("selected");
+          if (num === "1") { answers.need = btn.dataset.key; }
+          if (num === "4") { answers.launch = btn.dataset.key; }
+          goStep(currentStep + 1);
+        });
+      });
+    }
+  });
+  if (featureStep) {
+    featureStep.querySelectorAll(".form-option").forEach(btn => {
+      btn.addEventListener("click", () => btn.classList.toggle("selected"));
+    });
+  }
+  if (budgetStep) {
+    budgetStep.querySelectorAll(".form-option").forEach(btn => {
+      btn.addEventListener("click", () => {
+        budgetStep.querySelectorAll(".form-option").forEach(b => b.classList.remove("selected"));
+        btn.classList.add("selected");
+        answers.budget = btn.dataset.key;
+        if (budgetInput) { budgetInput.style.display = btn.dataset.key === "budget_yes" ? "block" : "none"; }
+      });
+    });
+  }
+  if (backBtn) { backBtn.addEventListener("click", () => goStep(currentStep - 1)); }
+  contactForm.querySelectorAll(".form-next").forEach(btn => {
     btn.addEventListener("click", () => {
-      answers[btn.closest(".form-step").dataset.step] = btn.dataset.key;
+      const num = btn.closest(".form-step").dataset.step;
+      if (num === "2") {
+        answers.project = msgInput ? msgInput.value.trim() : "";
+        answers.url = urlInput ? urlInput.value.trim() : "";
+      }
+      if (num === "3") {
+        answers.features = featureStep ? [...featureStep.querySelectorAll(".form-option.selected")].map(b => b.dataset.key) : [];
+      }
+      if (num === "5") {
+        answers.name = nameInput ? nameInput.value.trim() : "";
+        answers.email = emailInput ? emailInput.value.trim() : "";
+        answers.phone = phoneInput ? phoneInput.value.trim() : "";
+        answers.budgetAmount = budgetInput ? budgetInput.value.trim() : "";
+        buildResult();
+      }
       goStep(currentStep + 1);
     });
   });
-  if (backBtn) { backBtn.addEventListener("click", () => goStep(currentStep - 1)); }
-  if (nextBtn) {
-    nextBtn.addEventListener("click", () => {
-      answers.name = nameInput ? nameInput.value.trim() : "";
-      answers.msg = msgInput ? msgInput.value.trim() : "";
-      buildResult();
-      goStep(5);
-    });
-  }
   function buildResult() {
     const lang = document.documentElement.lang in translations ? document.documentElement.lang : "fr";
     const t = translations[lang];
+    const featuresText = answers.features.length ? answers.features.map(k => t[k] || k).join(", ") : "-";
+    let budgetText = answers.budget ? (t[answers.budget] || answers.budget) : "-";
+    if (answers.budget === "budget_yes" && answers.budgetAmount) { budgetText += " (" + answers.budgetAmount + ")"; }
     const lines = [
       t.greeting,
       "",
-      t.summary_need + (answers["1"] ? t[answers["1"]] : "-"),
-      t.summary_budget + (answers["2"] ? t[answers["2"]] : "-"),
-      t.summary_timing + (answers["3"] ? t[answers["3"]] : "-"),
-      t.summary_name + (answers.name || "-"),
+      t.summary_need + (answers.need ? t[answers.need] : "-"),
+      t.summary_desc + (answers.project || "-"),
+      answers.url ? t.summary_url + answers.url : null,
+      t.summary_features + featuresText,
+      t.summary_timing + (answers.launch ? t[answers.launch] : "-"),
+      t.summary_budget + budgetText,
       "",
-      answers.msg || "-"
-    ];
+      t.summary_name + (answers.name || "-"),
+      t.summary_email + (answers.email || "-"),
+      answers.phone ? t.summary_phone + answers.phone : null
+    ].filter(l => l !== null);
     const body = lines.join("\n");
     if (summary) { summary.textContent = body; }
     if (waLink) {
