@@ -462,7 +462,14 @@ if (contactForm) {
       waLink.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(body);
     }
     if (mailLink) {
-      mailLink.href = "mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent(t.email_subject) + "&body=" + encodeURIComponent(body);
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      const subject = encodeURIComponent(t.email_subject);
+      const bodyEncoded = encodeURIComponent(body);
+      if (isMobile) {
+        mailLink.href = "mailto:" + CONTACT_EMAIL + "?subject=" + subject + "&body=" + bodyEncoded;
+      } else {
+        mailLink.href = "https://mail.google.com/mail/?view=cm&fs=1&to=" + CONTACT_EMAIL + "&su=" + subject + "&body=" + bodyEncoded;
+      }
     }
   }
   goStep(1);
