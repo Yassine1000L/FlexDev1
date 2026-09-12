@@ -80,8 +80,36 @@ const translations= {
     "contact__eyebrow": "06 / PARLONS-EN",
     "contact__title": "Votre prochain projet<br>commence <em>ici.</em>",
     "contact__p": "Un nouveau site, un bug tenace ou une idée à concrétiser ?<br>Racontez-moi ce dont vous avez besoin.",
-    "contact__cta": "Parlons de votre projet <span>↗</span>",
-    "contact__note": "Ouvre le formulaire de contact Flex Dev.",
+    "q_need": "De quoi avez-vous besoin ?",
+    "q_budget": "Quel est votre budget ?",
+    "q_timing": "Quand souhaitez-vous démarrer ?",
+    "q_details": "Votre projet en quelques mots",
+    "q_contact": "Comment souhaitez-vous être contacté ?",
+    "need_site": "Un nouveau site",
+    "need_bug": "Corriger un bug",
+    "need_perf": "Optimisation & performances",
+    "need_maint": "Maintenance",
+    "need_other": "Autre chose",
+    "budget_low": "&lt; 500 €",
+    "budget_mid": "500 € – 1 500 €",
+    "budget_high": "1 500 € – 5 000 €",
+    "budget_max": "&gt; 5 000 €",
+    "budget_unknown": "Je ne sais pas encore",
+    "timing_soon": "Le plus tôt possible",
+    "timing_months": "Dans 1 à 3 mois",
+    "timing_flex": "C’est flexible",
+    "name_ph": "Votre nom",
+    "msg_ph": "Décrivez votre projet…",
+    "next": "Continuer",
+    "back": "Retour",
+    "btn_wa": "Discuter sur WhatsApp ↗",
+    "btn_mail": "Envoyer un e-mail ↗",
+    "greeting": "Bonjour Flex Dev !",
+    "summary_need": "Besoin : ",
+    "summary_budget": "Budget : ",
+    "summary_timing": "Délai : ",
+    "summary_name": "Nom : ",
+    "email_subject": "Projet Flex Dev — contact",
     "contact__detail1": "Réponse sous 24 h",
     "contact__detail2": "Devis gratuit",
     "contact__detail3": "Sans engagement",
@@ -171,8 +199,36 @@ const translations= {
     "contact__eyebrow": "06 / LET’S TALK",
     "contact__title": "Your next project<br>starts <em>here.</em>",
     "contact__p": "A new website, a stubborn bug or an idea to bring to life?<br>Tell me what you need.",
-    "contact__cta": "Let’s talk about your project <span>↗</span>",
-    "contact__note": "Opens the Flex Dev contact form.",
+    "q_need": "What do you need?",
+    "q_budget": "What is your budget?",
+    "q_timing": "When would you like to start?",
+    "q_details": "Your project in a few words",
+    "q_contact": "How would you like to be contacted?",
+    "need_site": "A new website",
+    "need_bug": "Fix a bug",
+    "need_perf": "Optimization & performance",
+    "need_maint": "Maintenance",
+    "need_other": "Something else",
+    "budget_low": "&lt; 500 €",
+    "budget_mid": "500 € – 1 500 €",
+    "budget_high": "1 500 € – 5 000 €",
+    "budget_max": "&gt; 5 000 €",
+    "budget_unknown": "Not sure yet",
+    "timing_soon": "As soon as possible",
+    "timing_months": "In 1 to 3 months",
+    "timing_flex": "It’s flexible",
+    "name_ph": "Your name",
+    "msg_ph": "Describe your project…",
+    "next": "Continue",
+    "back": "Back",
+    "btn_wa": "Chat on WhatsApp ↗",
+    "btn_mail": "Send an email ↗",
+    "greeting": "Hello Flex Dev!",
+    "summary_need": "Need: ",
+    "summary_budget": "Budget: ",
+    "summary_timing": "Timeline: ",
+    "summary_name": "Name: ",
+    "email_subject": "Flex Dev project — contact",
     "contact__detail1": "Reply within 24 h",
     "contact__detail2": "Free quote",
     "contact__detail3": "No obligation",
@@ -262,8 +318,36 @@ const translations= {
     "contact__eyebrow": "06 / ER OVER PRATEN",
     "contact__title": "Je volgende project<br>begint <em>hier.</em>",
     "contact__p": "Een nieuwe website, een hardnekkige bug of een idee dat je wilt realiseren?<br>Vertel me wat je nodig hebt.",
-    "contact__cta": "Laten we over je project praten <span>↗</span>",
-    "contact__note": "Opent het Flex Dev contactformulier.",
+    "q_need": "Wat heb je nodig?",
+    "q_budget": "Wat is je budget?",
+    "q_timing": "Wanneer wil je starten?",
+    "q_details": "Je project in een paar woorden",
+    "q_contact": "Hoe wil je gecontacteerd worden?",
+    "need_site": "Een nieuwe website",
+    "need_bug": "Een bug oplossen",
+    "need_perf": "Optimalisatie & prestaties",
+    "need_maint": "Onderhoud",
+    "need_other": "Iets anders",
+    "budget_low": "&lt; 500 €",
+    "budget_mid": "500 € – 1 500 €",
+    "budget_high": "1 500 € – 5 000 €",
+    "budget_max": "&gt; 5 000 €",
+    "budget_unknown": "Weet ik nog niet",
+    "timing_soon": "Zo snel mogelijk",
+    "timing_months": "Binnen 1 tot 3 maanden",
+    "timing_flex": "Het is flexibel",
+    "name_ph": "Jouw naam",
+    "msg_ph": "Beschrijf je project…",
+    "next": "Verder",
+    "back": "Terug",
+    "btn_wa": "Chatten via WhatsApp ↗",
+    "btn_mail": "Stuur een e-mail ↗",
+    "greeting": "Hallo Flex Dev!",
+    "summary_need": "Behoefte: ",
+    "summary_budget": "Budget: ",
+    "summary_timing": "Planning: ",
+    "summary_name": "Naam: ",
+    "email_subject": "Flex Dev project — contact",
     "contact__detail1": "Reactie binnen 24 uur",
     "contact__detail2": "Gratis offerte",
     "contact__detail3": "Vrijblijvend",
@@ -301,6 +385,10 @@ function applyLang(code) {
     const key = el.getAttribute("data-i18n");
     if (t[key] != null) { el.innerHTML = t[key]; }
   });
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => {
+    const key = el.getAttribute("data-i18n-ph");
+    if (t[key] != null) { el.setAttribute("placeholder", t[key]); }
+  });
   const meta = document.querySelector('meta[name="description"]');
   if (meta && t.meta_description) { meta.setAttribute("content", t.meta_description); }
   if (t.title) { document.title = t.title; }
@@ -317,3 +405,65 @@ function applyLang(code) {
     select.addEventListener("change", event => applyLang(event.target.value));
   }
 })();
+const WHATSAPP_NUMBER = "32483563735";
+const CONTACT_EMAIL = "FlexDevInfo@gmail.com";
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  const steps = [...contactForm.querySelectorAll(".form-step")];
+  const stepcount = document.getElementById("formStepcount");
+  const backBtn = document.getElementById("formBack");
+  const nextBtn = document.getElementById("formNext");
+  const nameInput = document.getElementById("formName");
+  const msgInput = document.getElementById("formMsg");
+  const summary = document.getElementById("formSummary");
+  const waLink = document.getElementById("waLink");
+  const mailLink = document.getElementById("mailLink");
+  const answers = {};
+  let currentStep = 1;
+  function goStep(n) {
+    if (n < 1) { n = 1; }
+    if (n > steps.length) { n = steps.length; }
+    currentStep = n;
+    steps.forEach(s => s.classList.toggle("active", parseInt(s.dataset.step, 10) === n));
+    if (stepcount) { stepcount.textContent = n + " / " + steps.length; }
+    if (backBtn) { backBtn.style.display = n > 1 ? "inline-block" : "none"; }
+  }
+  contactForm.querySelectorAll(".form-option").forEach(btn => {
+    btn.addEventListener("click", () => {
+      answers[btn.closest(".form-step").dataset.step] = btn.dataset.key;
+      goStep(currentStep + 1);
+    });
+  });
+  if (backBtn) { backBtn.addEventListener("click", () => goStep(currentStep - 1)); }
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      answers.name = nameInput ? nameInput.value.trim() : "";
+      answers.msg = msgInput ? msgInput.value.trim() : "";
+      buildResult();
+      goStep(5);
+    });
+  }
+  function buildResult() {
+    const lang = document.documentElement.lang in translations ? document.documentElement.lang : "fr";
+    const t = translations[lang];
+    const lines = [
+      t.greeting,
+      "",
+      t.summary_need + (answers["1"] ? t[answers["1"]] : "-"),
+      t.summary_budget + (answers["2"] ? t[answers["2"]] : "-"),
+      t.summary_timing + (answers["3"] ? t[answers["3"]] : "-"),
+      t.summary_name + (answers.name || "-"),
+      "",
+      answers.msg || "-"
+    ];
+    const body = lines.join("\n");
+    if (summary) { summary.textContent = body; }
+    if (waLink) {
+      waLink.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(body);
+    }
+    if (mailLink) {
+      mailLink.href = "mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent(t.email_subject) + "&body=" + encodeURIComponent(body);
+    }
+  }
+  goStep(1);
+}

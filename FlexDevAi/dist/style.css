@@ -10,3 +10,23 @@
 .lang-switch select:focus-visible{outline:3px solid var(--lime);outline-offset:4px}
 @media(max-width:650px){.lang-switch select{padding:5px 8px;font-size:13px}}
 .tech-strip .wrap>span{text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:2px;text-underline-offset:5px}
+.contact-form{margin-top:28px}
+.contact-form .form-stepcount{font-size:12px;color:#5e703f;margin-top:0}
+.contact-form .form-step{display:none}
+.contact-form .form-step.active{display:block}
+.contact-form .form-question{color:#151b0e;font-family:Manrope,sans-serif;font-size:19px;font-weight:600;margin-top:16px}
+.contact-form .form-options{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.contact-form .form-option{background:#151b0e;color:var(--white);border:none;border-radius:8px;padding:11px 16px;font-size:14px;font-family:inherit;cursor:pointer;text-align:left}
+.contact-form .form-option:hover{background:#344123;color:var(--lime)}
+.contact-form .form-input{display:block;width:100%;margin-top:14px;background:#151b0e;color:var(--white);border:1px solid #344123;border-radius:8px;padding:12px 14px;font:inherit;font-size:15px;box-sizing:border-box}
+.contact-form .form-input::placeholder{color:#a3a79e}
+.contact-form .form-input:focus{outline:2px solid var(--lime);border-color:var(--lime)}
+.contact-form .form-next{margin-top:18px}
+.contact-form .form-summary{background:#151b0e;color:var(--white);border-radius:8px;padding:16px;margin-top:18px;white-space:pre-line;font-size:14px;line-height:1.6}
+.contact-form .form-actions{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap;align-items:center}
+.contact-form .form-wa{background:#1fae54;color:#0a2a12}
+.contact-form .form-wa:hover{background:#25D366}
+.contact-form .form-mail{background:#151b0e;color:var(--white)}
+.contact-form .form-mail:hover{background:#344123}
+.contact-form .form-back{background:none;border:none;color:#4e5b39;text-decoration:underline;cursor:pointer;font:inherit;font-size:14px;margin-top:18px;display:none;padding:0}
+.contact-form .form-back:focus-visible{outline:3px solid #151b0e;outline-offset:4px}
