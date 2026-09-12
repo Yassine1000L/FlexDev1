@@ -623,3 +623,35 @@ if (contactForm) {
   document.querySelectorAll(".contact > div:first-child").forEach(function(el){ set(el, 0); });
   set(document.querySelector(".contact-details"), 150);
 })();
+(function initStepsCarousel(){
+  var track = document.getElementById("steps");
+  var prev = document.getElementById("stepsPrev");
+  var next = document.getElementById("stepsNext");
+  if (!track) { return; }
+  function cardStep(){
+    var card = track.querySelector("article");
+    if (!card) { return 0; }
+    var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    return card.getBoundingClientRect().width + gap;
+  }
+  function update(){
+    if (!prev || !next) { return; }
+    var max = track.scrollWidth - track.clientWidth;
+    prev.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft >= max - 2;
+  }
+  if (prev) { prev.addEventListener("click", function(){ track.scrollBy({ left: -cardStep(), behavior: "smooth" }); }); }
+  if (next) { next.addEventListener("click", function(){ track.scrollBy({ left: cardStep(), behavior: "smooth" }); }); }
+  track.addEventListener("scroll", update);
+  window.addEventListener("resize", update);
+  update();
+  track.addEventListener("wheel", function(e){
+    if (track.scrollWidth <= track.clientWidth) { return; }
+    var atStart = track.scrollLeft <= 0;
+    var atEnd = track.scrollLeft >= track.scrollWidth - track.clientWidth - 1;
+    if ((atStart && e.deltaY < 0) || (atEnd && e.deltaY > 0)) { return; }
+    if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) { return; }
+    e.preventDefault();
+    track.scrollLeft += e.deltaY;
+  }, { passive: false });
+})();
