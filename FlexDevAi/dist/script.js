@@ -2,6 +2,7 @@ document.documentElement.classList.add("js");
 const translations= {
   fr: {
     "nav__services": "Services",
+    "nav__about": "À propos",
     "nav__why": "Pourquoi",
     "nav__process": "Processus",
     "nav__projects": "Projets",
@@ -144,6 +145,7 @@ const translations= {
   },
   en: {
     "nav__services": "Services",
+    "nav__about": "About",
     "nav__why": "Why",
     "nav__process": "Process",
     "nav__projects": "Projects",
@@ -286,6 +288,7 @@ const translations= {
   },
   nl: {
     "nav__services": "Diensten",
+    "nav__about": "Over mij",
     "nav__why": "Waarom",
     "nav__process": "Werkwijze",
     "nav__projects": "Projecten",
