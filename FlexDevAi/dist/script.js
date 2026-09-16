@@ -145,7 +145,7 @@ const translations= {
   },
   en: {
     "nav__services": "Services",
-    "nav__about": "About",
+    "nav__about": "About me",
     "nav__why": "Why",
     "nav__process": "Process",
     "nav__projects": "Projects",
