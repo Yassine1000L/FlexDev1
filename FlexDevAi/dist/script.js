@@ -138,7 +138,7 @@ const translations= {
     "contact__detail1": "Réponse sous 24 h",
     "contact__detail2": "Devis gratuit",
     "contact__detail3": "Sans engagement",
-    "footer__tagline": "Développement web. Solutions concrètes.",
+    "footer__tagline": "© 2026 Flex Dev. Tous droits réservés.",
     "footer__top": "Retour en haut ↑",
     "title": "Flex Dev — Je construis. Je répare.",
     "meta_description": "Flex Dev : création de sites web sur mesure, correction de bugs, optimisation et maintenance. Discutons de votre projet."
@@ -281,7 +281,7 @@ const translations= {
     "contact__detail1": "Reply within 24 h",
     "contact__detail2": "Free quote",
     "contact__detail3": "No obligation",
-    "footer__tagline": "Web development. Concrete solutions.",
+    "footer__tagline": "© 2026 Flex Dev. All rights reserved.",
     "footer__top": "Back to top ↑",
     "title": "Flex Dev — I build. I fix.",
     "meta_description": "Flex Dev: custom website development, bug fixing, optimization and maintenance. Let’s talk about your project."
@@ -424,7 +424,7 @@ const translations= {
     "contact__detail1": "Reactie binnen 24 uur",
     "contact__detail2": "Gratis offerte",
     "contact__detail3": "Vrijblijvend",
-    "footer__tagline": "Webontwikkeling. Concrete oplossingen.",
+    "footer__tagline": "© 2026 Flex Dev. Alle rechten voorbehouden.",
     "footer__top": "Terug naar boven ↑",
     "title": "Flex Dev — Ik bouw. Ik verbeter.",
     "meta_description": "Flex Dev: maatwerk websites, bugfixes, optimalisatie en onderhoud. Laten we over je project praten."
