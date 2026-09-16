@@ -2,7 +2,7 @@ document.documentElement.classList.add("js");
 const translations= {
   fr: {
     "nav__services": "Services",
-    "nav__about": "À propos",
+    "nav__about": "À propos de moi",
     "nav__why": "Pourquoi",
     "nav__process": "Processus",
     "nav__projects": "Projets",
