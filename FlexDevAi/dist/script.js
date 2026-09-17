@@ -81,7 +81,7 @@ const translations= {
     "proj__desc": "Plus d’informations sur ce projet à venir.",
     "contact__eyebrow": "05 / PARLONS-EN",
     "contact__title": "Votre prochain projet<br>commence <em>ici.</em>",
-    "contact__p": "Un nouveau site, un bug tenace ou une idée à concrétiser ?<br>Racontez-moi ce dont vous avez besoin.<br>Ceci est à titre indicatif et peut encore être modifié par la suite.",
+    "contact__p": "Un nouveau site, un bug tenace ou une idée à concrétiser ?<br>Racontez-moi ce dont vous avez besoin.<br><br>Ceci est à titre indicatif et peut encore être modifié par la suite.",
     "q_need": "De quoi avez-vous besoin ?",
     "need_new": "Un nouveau site web",
     "need_redesign": "Refonte d’un site existant",
